@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.thesis.trialnavdrawer.ui.fragments.HomeFragment"
+        android:label="@string/menu_beranda"
+        tools:layout="@layout/fragment_home" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_diagnostic"
+        android:name="com.thesis.trialnavdrawer.ui.fragments.DiagnosticFragment"
+        android:label="@string/menu_diagnosa"
+        tools:layout="@layout/fragment_diagnostic" />
+
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="com.thesis.trialnavdrawer.ui.fragments.HistoryFragment"
+        android:label="@string/menu_riwayat"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/nav_disease_list"
+        android:name="com.thesis.trialnavdrawer.ui.fragments.DiseaseListFragment"
+        android:label="@string/menu_daftar"
+        tools:layout="@layout/fragment_disease_list" />
+
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.thesis.trialnavdrawer.ui.fragments.SettingFragment"
+        android:label="@string/menu_pengaturan"
+        tools:layout="@layout/fragment_setting" />
+</navigation>
